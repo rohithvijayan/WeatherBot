@@ -13,12 +13,6 @@ def start_command(update, context):
 def help_command(update, context):
     update.message.reply_text('Go ask Google!')
 
-
-# def handle_message(update, context):
-#     text = str(update.message.text).lower()
-#     response = R.response(text)
-#     update.message.reply_text(response)
-
 def handle_weather(update, context):
     city = str(update.message.text).lower()
     weather_data = R.weather(city)
