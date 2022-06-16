@@ -16,6 +16,7 @@ def help_command(update, context):
 def handle_weather(update, context):
     city = str(update.message.text).lower()
     weather_data = R.weather(city)
+    #gif corresponding to weather
     if 'Clear' in weather_data:
         update.message.reply_text(weather_data)
         update.message.reply_animation("https://tenor.com/bGZYe.gif", 'Animation')
