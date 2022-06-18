@@ -8,7 +8,7 @@ print("Bot Started..")
 
 def start_command(update, context):
     update.message.reply_text('Hello There!\nThis is Weather Bot\nEnter The City Name To Get Real-Time Weather Updates')
-    update.message.reply_animation('https://tenor.com/bgspW.gif','Animation')
+    update.message.reply_animation("https://tenor.com/bgspW.gif",'Animation')
 
 def help_command(update, context):
     update.message.reply_text('Go ask Google!')
